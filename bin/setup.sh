@@ -16,9 +16,9 @@ git clone https://github.com/viamrobotics/viam-cpp-sdk.git
 pushd viam-cpp-sdk
 
 # NOTE: If you change this version, also change it in the `conanfile.py` requirements
-git remote add ethan https://github.com/stuqdog/cpp-sdk
-git fetch ethan RSDK-10720-support-tcp-module-connections
-git checkout ethan/RSDK-10720-support-tcp-module-connections
+git remote add alan https://github.com/penguinland/viam-cpp-sdk
+git fetch alan ethan_tcp_branch
+git checkout alan/ethan_tcp_branch
 
 # Build the C++ SDK repo
 #
