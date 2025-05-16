@@ -20,7 +20,7 @@ Push-Location viam-cpp-sdk
 
 # NOTE: If you change this version, also change it in the `conanfile.py` requirements
 git remote add ethan https://github.com/stuqdog/cpp-sdk
-get fetch ethan RSDK-10720-support-tcp-module-connections
+git fetch ethan RSDK-10720-support-tcp-module-connections
 git checkout ethan/RSDK-10720-support-tcp-module-connections
 
 # Build the C++ SDK repo.
