@@ -19,7 +19,9 @@ git clone https://github.com/viamrobotics/viam-cpp-sdk.git
 Push-Location viam-cpp-sdk
 
 # NOTE: If you change this version, also change it in the `conanfile.py` requirements
-git checkout releases/v0.9.0
+git remote add ethan https://github.com/stuqdog/cpp-sdk
+get fetch ethan RSDK-10720-support-tcp-module-connections
+git checkout ethan/RSDK-10720-support-tcp-module-connections
 
 # Build the C++ SDK repo.
 #
@@ -39,6 +41,7 @@ conan create . `
       -c:a tools.microsoft:winsdk_version=10.0.17763.0 `
       -s:a compiler.runtime=static `
       -tf `"`"
+conan export . --name=viam-cpp-sdk --version=0.11.1-tcp
 
 # Clean up
 Pop-Location  # viam-cpp-sdk
