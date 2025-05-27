@@ -51,3 +51,5 @@ target_link_libraries(tflite_cpu
 install(
   TARGETS tflite_cpu
 )
+
+add_subdirectory(tests)
