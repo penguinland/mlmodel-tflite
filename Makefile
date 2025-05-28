@@ -35,3 +35,7 @@ module.tar.gz: $(BIN) meta.json
 .PHONY: lint
 lint:
 	./bin/run-clang-format.sh
+
+.PHONY: test
+test: $(BIN)
+	ctest --test-dir build-conan/build/RelWithDebInfo/tests
